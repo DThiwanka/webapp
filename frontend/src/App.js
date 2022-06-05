@@ -1,16 +1,25 @@
-import React, { Component } from 'react';
-import {BrowserRouter,Route} from 'react-router-dom';
+import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //imports
 import adminprofile from "./components/admin_profile/adminprofile";
 import home from "./components/home/home"
+import Navbar from "./components/navbar/navbar"
 
 function App() {
     return (
-        <BrowserRouter key={App.BrowserRouter}>
-            <Route path="/" exact component={home} key={App.home}></Route>
-            <Route path="/admin" exact component={adminprofile} key={App.adminprofile}></Route>
-        </BrowserRouter>
+        <Router>
+            <Navbar />
+            <main>
+                <Switch>
+
+                    <Route exact path="/" component={home} />
+                    <Route exact path="/admin" component={adminprofile} />
+
+                </Switch>
+            </main>
+
+        </Router>
 
     )
 }
