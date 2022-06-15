@@ -9,12 +9,15 @@ function login() {
 
 
             <button type="button" class="btn btn-primary btn-lg btn-block">login</button>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block">login</button>
             
 
           </div>
          
           <div class="col-sm">
 
+          <button type="button" class="btn btn-primary btn-lg btn-block">login</button>
           <button type="button" class="btn btn-primary btn-lg btn-block">login</button>
 
           </div>
